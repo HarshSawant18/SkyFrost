@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+.myText{
+
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+u{
+    color: rgb(89, 89, 196);
+}
+
+#output{
+   background-color: rgb(31, 31, 31);
+color: aliceblue;
+width: 100%; /* Take full width */
+height: 50vh; /* Take full viewport height */
+display: flex; /* Use flexbox for centering content */
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center content vertically */
+}
+
+#day{
+      background-color: rgb(59 66 67);
+color: aliceblue;
+width: 100%; /* Take full width */
+height: 20vh; /* Take full viewport height */
+display: flex; /* Use flexbox for centering content */
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center content vertically */
+}
+  /* Define CSS classes for different weather conditions */
+.weather-icon {
+    width: 50px; 
+    height: 50px; 
+
+}
+.clear-sky {
+    background-image: url('images/clear-sky.png'); 
+}
+.clouds {
+    background-image: url('images/clouds.png'); 
+}
+.smoke{
+    background-image: url('images/smoke.png'); 
+}
+.defalult-icon{
+    background-image: url('images/defalult-icon.png');
+}

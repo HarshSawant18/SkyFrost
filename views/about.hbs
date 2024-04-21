@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    
+        {{>bootLinks}}
+
+        <style>
+            .team-boxed {
+  color:#313437;
+  background-color:#eef4f7;
+}
+
+.team-boxed p {
+  color:#7d8285;
+}
+
+.team-boxed h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .team-boxed h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.team-boxed .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom:0;
+}
+
+.team-boxed .people {
+  padding:50px 0;
+}
+
+.team-boxed .item {
+  text-align:center;
+}
+
+.team-boxed .item .box {
+  text-align:center;
+  padding:30px;
+  background-color:#fff;
+  margin-bottom:30px;
+}
+
+.team-boxed .item .name {
+  font-weight:bold;
+  margin-top:28px;
+  margin-bottom:8px;
+  color:inherit;
+}
+
+.team-boxed .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#d0d0d0;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+.team-boxed .item .description {
+  font-size:15px;
+  margin-top:15px;
+  margin-bottom:20px;
+}
+
+.team-boxed .item img {
+  max-width:160px;
+}
+
+.team-boxed .social {
+  font-size:18px;
+  color:#a2a8ae;
+}
+
+.team-boxed .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity:1;
+}
+
+
+        </style>
+</head>
+<body>
+    {{>header}}
+
+
+ <div class="team-boxed">
+        <div class="container">
+           
+                <section class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="text-center">
+
+                                <h2 class="display-5 fw-bold">About Me</h2>
+                                <p class="lead">I'm Harsh Sawant, the developer behind SkyFrost, a dynamic website displaying real-time weather conditions in cities worldwide. Utilizing APIs, SkyFrost offers users instant access to accurate weather updates, enhancing their online experience with valuable and timely information. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                            
+            </div>
+            <div class="row people">
+                 <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <h3 class="name">Frontend</h3>
+                        <p class="title">Technology i Use</p>
+                        <p class="description">Html5 / Css / Js / Bootstrap </p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 item">
+                    <div class="box"><img class="rounded-circle" src="https://media.licdn.com/dms/image/D4E03AQHmy0ah49dw8A/profile-displayphoto-shrink_400_400/0/1712778090960?e=1718841600&v=beta&t=_fIAoGk69ThQuurZzz1u9GTMhPTdNQqeRiLdnjFBlNI">
+                        <h3 class="name">Harsh Sawant</h3>
+                        <p class="title">Software Developer</p>
+                        <p class="description">
+
+            I'm Harsh Sawant, currently in my third year of studies, and I'm delving into the world of full-stack web development where i can ready to create static and dynamic web application. If you're curious about my projects and aspirations, hop over to my <a href="https://www.linkedin.com/in/harsh-sawant-260646255/" style="text-decoration: none; color:rgb(74, 74, 233)">LinkedIn profile</a>  for a deeper dive! </p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+             
+                  <div class="col-md-6 col-lg-4 item">
+                    <div class="box">
+                        <h3 class="name">Backend</h3>
+                        <p class="title">Technology i Use</p>
+                        <p class="description">Node.js / Express.js / Dynamic Weather Api </p>
+                        <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    {{>bootScript}}
+
+      {{>footer}}
+</body>
+</html>
+
+
+   

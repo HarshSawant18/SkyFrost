@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include Bootstrap CSS -->
+    {{>bootLinks}}
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+        .myText{
+    
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        p{
+             font-family: "Platypi", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+        u{
+            color: rgb(89, 89, 196);
+        }
+
+        #output{
+           background-color: rgb(174 217 230);
+    color: rgb(20, 21, 21);
+    width: 100%; /* Take full width */
+    height: 10vh; /* Take full viewport height */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+        }
+
+        #output_date{
+              background-color: rgb(59 66 67);
+    color: aliceblue;
+    width: 100%; /* Take full width */
+    height: 20vh; /* Take full viewport height */
+    display: flex; /* Use flexbox for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+        }
+          /* Define CSS classes for different weather conditions */
+        .weather-icon {
+            width: 50px; 
+            height: 50px; 
+ 
+        }
+        .clear-sky {
+            background-image: url('images/clear-sky.png'); 
+        }
+        .clouds {
+            background-image: url('images/clouds.png'); 
+        }
+        .smoke{
+            background-image: url('images/smoke.png'); 
+        }
+        .defalult-icon{
+            background-image: url('images/defalult-icon.png');
+        }
+
+        .card {
+            border-radius: 10px;
+            width: 350px;
+            height: auto;
+            box-shadow: 2px 2px 2px 2px rgb(1, 1, 1);
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Include header -->
+    {{>header}}
+    
+
+    <div class="container" style="box-shadow: 10px 10px 5px lightblue;"> 
+        <div class="row">
+            
+            <div class="col-md-6 d-flex align-items-center">
+                <!-- Add Bootstrap classes for responsive layout and aligning text -->
+                <div class="myText">
+                     <p>Search for your <u>City</u> , discover its weather instantly</p>
+                    <input type="text" id="city_name" placeholder="⌕ Search Your City Name " style=" box-shadow: 10px 10px 5px lightblue;">
+                    <br />
+                    <button class="btn btn-dark" id="search_btn">Search</button>
+ 
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-center">
+                <!-- Adjust image size and make it responsive -->
+                <div class="card">
+                    <!-- Card content -->
+                    <div class="bg-image ripple" data-mdb-ripple-color="light" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                        <img src="https://img.freepik.com/free-vector/meteorological-report-weather-forecast-concept_107791-13244.jpg?t=st=1713469414~exp=1713473014~hmac=41d9ad424d16694c2a01cccf0626a68b8f10b77691251b87178129068818bc0b&w=1060" class="w-100" />
+                        <div class="mask" style="background-color: rgb(28 32 68)">
+                            <div class="d-flex justify-content-between p-4">
+                                <a href="#!" class="text-white"><i class="fas fa-chevron-left fa-lg"></i></a>
+                                <a href="#!" class="text-white"><i class="fas fa-cog fa-lg"></i></a>
+                            </div>
+                            <div class="text-center text-white">
+                                <div id="output">
+                                    Search Your City
+                                </div>
+                                <br>
+                                <p class="h3 mb-4" id="today_weather">Weather</p>
+                                <p class="h5 mb-4" id="today_city">City</p>
+                                <p class="display-2" id="today_temperature"><strong>Tem°C</strong> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-2 text-center">
+                        <a href="#!" class="text-body"><i class="fas fa-chevron-up fa-lg mb-4"></i></a>
+
+                        <div class="d-flex justify-content-between" style="color: #0a0b15;">
+                            <p class="h5 fw-normal" id="today_month">Month</p>
+                            <p class="h5 fw-normal" id="today_day"><i class="fas fa-cloud pe-2"></i> Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Include footer -->
+    {{>footer}}
+
+    <!-- Include Bootstrap JS -->
+    {{>bootScript}}
+    
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>
